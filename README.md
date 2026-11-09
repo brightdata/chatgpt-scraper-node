@@ -477,3 +477,11 @@ Anything about the API, your account or your credits:
 ## ChatGPT scraper for Python
 
 The same ChatGPT scraper is available for Python: [brightdata/chatgpt-scraper](https://github.com/brightdata/chatgpt-scraper).
+
+## More open source scrapers from Bright Data
+
+Other Node.js scrapers built the same way, with live-verified examples:
+
+- [URL to Markdown (Fetch API) for Node.js](https://github.com/brightdata/fetch-api-scraper-node)
+- [YouTube scraper for Node.js](https://github.com/brightdata/youtube-scraper-node)
+- [LinkedIn scraper for Node.js](https://github.com/brightdata/linkedin-scraper-node)
