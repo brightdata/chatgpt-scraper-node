@@ -63,7 +63,7 @@ jobs:
           const block = (text, lang) =>
             new RegExp("```" + lang + "\\n([\\s\\S]*?)```").exec(text)[1];
 
-          const quick = section("How to scrape ChatGPT answers with Node.js");
+          const quick = section("How to scrape ChatGPT results with Node.js");
           const snippet = block(quick, "javascript");
           const command = block(section("Bulk ChatGPT prompt scraper CLI"), "bash");
           for (const [required, where] of [

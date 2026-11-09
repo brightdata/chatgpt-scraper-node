@@ -3,19 +3,19 @@
 [![Live check](https://github.com/brightdata/chatgpt-scraper-node/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/chatgpt-scraper-node/actions/workflows/live.yml)
 [![last verified](https://img.shields.io/badge/last%20verified-9%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper-node/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
 
-[Quickstart](#how-to-scrape-chatgpt-answers-with-nodejs) · [No OpenAI key](#scrape-chatgpt-without-an-openai-api-key) · [CLI](#bulk-chatgpt-prompt-scraper-cli) · [Citations](#track-which-sites-chatgpt-cites-for-a-prompt) · [Endpoints](#scrape-chatgpt-answers-citations-and-sources) · [Data](#chatgpt-answer-data-fields-json) · [Errors](#chatgpt-scraper-errors) · [MCP and Claude Code](#chatgpt-mcp-server-and-claude-code-skill) · [Free credits](#is-this-chatgpt-scraper-free) · [Docs](https://docs.brightdata.com/products/scrapers/chatgpt/introduction) · [Support](#support)
+[Quickstart](#how-to-scrape-chatgpt-results-with-nodejs) · [No OpenAI key](#scrape-chatgpt-without-an-openai-api-key) · [CLI](#bulk-chatgpt-prompt-scraper-cli) · [Citations](#track-chatgpt-citations-and-brand-visibility-for-a-prompt) · [Endpoints](#scrape-chatgpt-answers-citations-and-sources) · [Data](#chatgpt-answer-data-fields-json) · [Errors](#chatgpt-scraper-errors) · [MCP and Claude Code](#chatgpt-mcp-server-and-claude-code-skill) · [Free credits](#is-this-chatgpt-scraper-free) · [Docs](https://docs.brightdata.com/products/scrapers/chatgpt/introduction) · [Support](#support)
 
 ChatGPT answers as JSON, in JavaScript: send a prompt, get back the answer ChatGPT
 shows in its own interface, as text, Markdown and HTML, with the sites it
-cited, by country, with web search and follow-up prompts. Built for GEO and AI
-visibility tracking: which brands ChatGPT recommends, and which sources it
-cites. No OpenAI API key, no browser, no dependencies. Built on the
+cited, by country, with web search and follow-up prompts. Built for ChatGPT
+visibility tracking and GEO: which brands ChatGPT mentions and recommends, and
+which sources it cites. No OpenAI API key, no browser, no dependencies. Built on the
 [Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github).
 
 Also here: a one-command CLI for a list of prompts, and the
 [Bright Data CLI](#chatgpt-mcp-server-and-claude-code-skill), which needs no JavaScript at all.
 
-## How to scrape ChatGPT answers with Node.js
+## How to scrape ChatGPT results with Node.js
 
 Node 20 or newer, and nothing to install: this is the built-in `fetch`. Save
 it as a `.mjs` file, since it uses top-level `await`.
@@ -171,7 +171,7 @@ Each answer is one record, and a prompt the API could not answer comes back
 as a row with an `error` key. Any other input the API accepts goes in as the
 API names it, such as `index`.
 
-### Track which sites ChatGPT cites for a prompt
+### Track ChatGPT citations and brand visibility for a prompt
 
 ```javascript
 import { ask } from "@brightdata/chatgpt-scraper-node";
