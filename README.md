@@ -4,7 +4,7 @@ Scrape ChatGPT answers, citations and sources to JSON with Node.js and JavaScrip
 Built on the [Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github&utm_medium=referral&utm_content=chatgpt-scraper-node). New accounts get 5,000 free credits a month.
 
 [![Live check](https://github.com/brightdata/chatgpt-scraper-node/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/chatgpt-scraper-node/actions/workflows/live.yml)
-[![last verified](https://img.shields.io/badge/last%20verified-11%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper-node/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
+[![last verified](https://img.shields.io/badge/last%20verified-11%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper-node/actions/workflows/live.yml) <!-- verified: rewritten by the weekly run -->
 
 [Quickstart](#how-to-scrape-chatgpt-results-with-nodejs) · [No OpenAI key](#scrape-chatgpt-without-an-openai-api-key) · [CLI](#bulk-chatgpt-prompt-scraper-cli) · [Citations](#track-chatgpt-citations-and-brand-visibility-for-a-prompt) · [Endpoints](#scrape-chatgpt-answers-citations-and-sources) · [Data](#chatgpt-answer-data-fields-json) · [Errors](#chatgpt-scraper-errors) · [MCP and Claude Code](#chatgpt-mcp-server-and-claude-code-skill) · [Free credits](#is-this-chatgpt-scraper-free) · [Docs](https://docs.brightdata.com/products/scrapers/chatgpt/introduction) · [Support](#support)
 
@@ -329,7 +329,7 @@ hardcodes no field list. Whatever the API returns lands in each record, and
 in the command's file.
 
 <!-- fields:start -->
-Regenerated every day from the published schema,
+Regenerated every week from the published schema,
 [scrapers-full.json](https://docs.brightdata.com/scrapers-full.json), so they cannot go stale. A record
 carries the fields that apply to it, plus `timestamp` and `input`; the
 sample file's first answer has 33 keys.
